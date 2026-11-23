@@ -1,0 +1,7 @@
+{
+  "solc": "0.8.37",
+  "evmVersion": "shanghai",
+  "optimizer": { "enabled": true, "runs": 200 },
+  "dakotaCodeSizeMost": 32768,
+  "baseCodeSizeMost": 24576
+}

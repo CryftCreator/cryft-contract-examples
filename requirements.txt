@@ -1,0 +1,6 @@
+# The test harness, as in Cryft's own contract repos: pytest + py-solc-x on an in-memory chain (eth-tester / py-evm).
+pytest==9.2.0
+py-solc-x==2.1.0
+web3[tester]==8.0.0
+eth-tester==0.14.0b1
+py-evm==0.12.1b1

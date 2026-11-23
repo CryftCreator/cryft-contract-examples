@@ -1,0 +1,8 @@
+Cryft platform contract examples
+Copyright (c) 2026 Cryft Labs
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+These are starting points, not audited products. Review, test and audit your own code before you deploy it
+with real value. The patterns are adapted from contracts Cryft runs on the Cryft Network (Dakota); the
+adaptations are simplified for teaching and are not the deployed contracts.
