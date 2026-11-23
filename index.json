@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "name": "cryft-contract-examples",
-  "version": "1.0.0",
-  "tag": "v1.0.0",
+  "version": "1.0.1",
+  "tag": "v1.0.1",
   "repository": "https://github.com/CryftCreator/cryft-contract-examples",
   "compiler": {
     "solc": "0.8.37",
@@ -17,18 +17,33 @@
   "shared": [
     {
       "path": "README.md",
-      "sha256": "0c17e3a14f3a6432dc719318de6873ca8dab12647ad59b2d0175e9ca5d6f391f",
-      "bytes": 5176
+      "sha256": "70b337d101aaf7d466aa07955b829ca519a76b86ab46a3137ea2543de96f9f1b",
+      "bytes": 8369
     },
     {
       "path": "LICENSE",
+      "sha256": "4534dd700c110f3a480413506c2dbfa5c15b95878918ea799865ddc7bb3ab717",
+      "bytes": 1255
+    },
+    {
+      "path": "LICENSE-APACHE",
       "sha256": "75fb1f41b8c122bf88271ad5890244b9e7ad81e9c1c5354e2cc5e6762a5e3435",
       "bytes": 11769
     },
     {
+      "path": "LICENSE-MIT",
+      "sha256": "27bf196313540cf7967622bb7cd4cb894a995418457056e471281e5105ca42b0",
+      "bytes": 1067
+    },
+    {
       "path": "NOTICE",
-      "sha256": "9c60c882279621f8fd92d1cfef8ba6beac91195e5ea3381bb82d4f6dcbbb100e",
-      "bytes": 413
+      "sha256": "36a3c9ef540c03c66e7333ff19a8312080928bae6cd634567d87425c61fe53d1",
+      "bytes": 4583
+    },
+    {
+      "path": "provenance.json",
+      "sha256": "6244a47f1d667ce1566c296207e2a0f559f9766ce3f2495f4ae8bdc5f87f0cff",
+      "bytes": 6709
     },
     {
       "path": "compiler.json",
@@ -52,8 +67,8 @@
     },
     {
       "path": "tests/test_build.py",
-      "sha256": "4485dae4cc0ef540a81911fbe8fa5d1ef337b72638daaff2bf6ccd85737f6d2d",
-      "bytes": 3419
+      "sha256": "a7e8971ef6ac1c5d3f7e6c75755bf9480c40a33dff60b513278945e32623cbb0",
+      "bytes": 3521
     },
     {
       "path": "tests/test_remix_tests.py",
@@ -62,8 +77,8 @@
     },
     {
       "path": "tests/remix_stub/remix_tests.sol",
-      "sha256": "ad27b9f335235c4bd8cfb523c24e0fb7d89fcc1d672088c22b87a23655337229",
-      "bytes": 1690
+      "sha256": "93ff234e60a4ffcbef14d251c270489f6371fe10e3e73054b1e6b4bb8c62c6bc",
+      "bytes": 1929
     },
     {
       "path": "tools/standard_input.py",
@@ -72,13 +87,23 @@
     },
     {
       "path": "tools/make_index.py",
-      "sha256": "e5620806b1d296208aaee37ce0de4b578f977dd3bc15bc5497696c04995defb4",
-      "bytes": 4170
+      "sha256": "6af92af0e50f2f7d248a91daf05bd47fc6223ccf07c663dc756dcfaf0d588ce4",
+      "bytes": 4283
+    },
+    {
+      "path": "tools/provenance.py",
+      "sha256": "d6d1e2d63e95b0a813fe212eebca6a1c4095c6c0ba79d06dbfffa9fd4202912d",
+      "bytes": 3599
     },
     {
       "path": "tests/test_index.py",
       "sha256": "05e66c9a4a57112c64113b91cff60ba3841a7c26bc0e574c4e098981170a49b2",
       "bytes": 394
+    },
+    {
+      "path": "tests/test_provenance.py",
+      "sha256": "bae1bd6b7c62044cb18244a02f78ce3645324fc2c2a83f8f373db146c51b9c88",
+      "bytes": 5427
     }
   ],
   "examples": [
@@ -89,28 +114,28 @@
       "files": [
         {
           "path": "contracts/01-upgradeable/ExampleProxy.sol",
-          "sha256": "2b3112533f2e155f77ad7e4ded5a053339be1204a0605e0c735907a399cc2b75",
-          "bytes": 3962
+          "sha256": "82e5844a4193d1f1d2ef59a7cd8f534bc0f6afa4d650edf8cbfd83ef0e2c80f0",
+          "bytes": 4457
         },
         {
           "path": "contracts/01-upgradeable/ExampleTimelock.sol",
-          "sha256": "7d62b2b30ee61b33feb723b2d00e81283f3c04fe3924b4f22141debbd559749c",
-          "bytes": 4726
+          "sha256": "e9165056603007e347e1b6c9bc98e9e0675b0810abe1ea4692a268b71cd8bdeb",
+          "bytes": 5000
         },
         {
           "path": "contracts/01-upgradeable/Initializable.sol",
-          "sha256": "77b8ad9b86242679d943e85e0e277ed6d9d3ef9ebf25a98de07acb206bacf807",
-          "bytes": 2134
+          "sha256": "f0e4720527b5d221d2961685e33e689a7ec41bc48bf53a000653474f94293c28",
+          "bytes": 2524
         },
         {
           "path": "contracts/01-upgradeable/NoticeBoardV1.sol",
-          "sha256": "e1dfe20442f9317f1583071a64957fee7fa2affb80e62b9d52b6b3885eac1734",
-          "bytes": 2751
+          "sha256": "f4faa7a4841b6199370ca507bcbcb76010772c485b57c118f367c0ec8f1a6fee",
+          "bytes": 2848
         },
         {
           "path": "contracts/01-upgradeable/NoticeBoardV2.sol",
-          "sha256": "6f7fb2b074e95f8b2e6c831b189c7309b03e45edbadaeb55cd4db570b0e8db32",
-          "bytes": 1553
+          "sha256": "1d3dd14506b2eb7960eaa8e91a6a93f6239f06c1de576f02bdeabe501983df82",
+          "bytes": 1650
         },
         {
           "path": "contracts/01-upgradeable/README.md",
@@ -119,8 +144,8 @@
         },
         {
           "path": "remix-tests/upgradeable_test.sol",
-          "sha256": "7ef21e978981654879696d1e724533ee2e0e767b099ebe269e5d5e50953a2dd9",
-          "bytes": 2075
+          "sha256": "9c7e1eea2be1795030e12b7158c32628939478e1c503446429440323f76c6670",
+          "bytes": 2172
         },
         {
           "path": "tests/test_upgradeable.py",
@@ -136,13 +161,13 @@
       "files": [
         {
           "path": "contracts/02-card-reads/CardStatusReader.sol",
-          "sha256": "ebcfe3a3eced0c7d53589a52b9ee5575951e941f10505be4edb593a3c4ef06b2",
-          "bytes": 3676
+          "sha256": "a36b8a75db89ef1c2ec8a48f3ba7c187b1733ce82a34fe1607ed779431b32f62",
+          "bytes": 3773
         },
         {
           "path": "contracts/02-card-reads/ICryftCardsRead.sol",
-          "sha256": "29bc4590a7078328935d42d422d30da762a6396d97531b5d94669da18286266d",
-          "bytes": 1931
+          "sha256": "693137a3e7773c1083814ee4c80926b824c7ce21ae53c50485c1a496e704820b",
+          "bytes": 2200
         },
         {
           "path": "contracts/02-card-reads/README.md",
@@ -151,13 +176,13 @@
         },
         {
           "path": "remix-tests/card_reads_test.sol",
-          "sha256": "e71d52401d6044268dfdf094a508d6d47ebde22a5b73d91355ce93a899849afb",
-          "bytes": 1160
+          "sha256": "b9935413f0f302fcbaf5faac06695a5b9c6a319aff1fc79e8fdca0b462ffcd97",
+          "bytes": 1257
         },
         {
           "path": "tests/support/MockCards.sol",
-          "sha256": "941faf8d0b275293b10cffc2aeccee37c6b6e920daee8f974225100700fc44b0",
-          "bytes": 1584
+          "sha256": "3dcaeb87524c96208c2482360e9549b5e45a146b06aa62a4a70a4868dffd9e65",
+          "bytes": 1681
         },
         {
           "path": "tests/test_card_reads.py",
@@ -173,8 +198,8 @@
       "files": [
         {
           "path": "contracts/03-sponsored-gas/ITenantAllowancePolicy.sol",
-          "sha256": "9ca8c25b99c5e2c9723e947e7962f48949de9b72405626535bb0bc21f49cb3be",
-          "bytes": 763
+          "sha256": "c99ff186ca68973903b1059001d7ae715d0453f9423d2b899786c141673fc285",
+          "bytes": 1001
         },
         {
           "path": "contracts/03-sponsored-gas/README.md",
@@ -183,23 +208,23 @@
         },
         {
           "path": "contracts/03-sponsored-gas/SponsoredGuestbook.sol",
-          "sha256": "75e59c7f5c15c2297a13644618ceb0489c16cf86efc2309cabb5c3d64ba9d7af",
-          "bytes": 2054
+          "sha256": "44f0afc64165ab3118232e9219b309bbc14724cc69b10318b02e7e20de0c0239",
+          "bytes": 2151
         },
         {
           "path": "contracts/03-sponsored-gas/WalletDailyPolicy.sol",
-          "sha256": "5ef3f946d1df7606a9313bf169150461d1dce5d152529812ae8bcca6669a3c3f",
-          "bytes": 8482
+          "sha256": "05ab6807ef035feacb727d1ea95aa641948369029e62933b53b7753f4324b158",
+          "bytes": 8705
         },
         {
           "path": "remix-tests/sponsored_gas_test.sol",
-          "sha256": "6fa0cd3271f8903a871fea4e48f40bfc07cacf14b1ef76f3701a41c0ab613c8d",
-          "bytes": 1415
+          "sha256": "49c1f11e88405957680579827ec7f7688f8b213e1e56a7a69da8e123ce301b00",
+          "bytes": 1512
         },
         {
           "path": "tests/support/Receivers.sol",
-          "sha256": "6aa40e1a8837ad9a14ad587909937401d6c6f0b09c66d2db8dbcebfb451c2e56",
-          "bytes": 1111
+          "sha256": "d1f5d264bcf312a294b1ab718516ce471df7fbf3c0fae00f300138b4e667a769",
+          "bytes": 1295
         },
         {
           "path": "tests/test_sponsored_gas.py",
@@ -215,8 +240,8 @@
       "files": [
         {
           "path": "contracts/04-collectible-1155/CollectibleItems.sol",
-          "sha256": "012cb6f60c44190021c902d2386369da5dab2f33b8cf68798ec6e9c48c4bdc19",
-          "bytes": 10028
+          "sha256": "9284d3ab3b51dfb5343bdc992b613ae86ec038f2e7448060e3d64588303ab979",
+          "bytes": 10513
         },
         {
           "path": "contracts/04-collectible-1155/README.md",
@@ -225,28 +250,28 @@
         },
         {
           "path": "contracts/01-upgradeable/Initializable.sol",
-          "sha256": "77b8ad9b86242679d943e85e0e277ed6d9d3ef9ebf25a98de07acb206bacf807",
-          "bytes": 2134
+          "sha256": "f0e4720527b5d221d2961685e33e689a7ec41bc48bf53a000653474f94293c28",
+          "bytes": 2524
         },
         {
           "path": "contracts/01-upgradeable/ExampleProxy.sol",
-          "sha256": "2b3112533f2e155f77ad7e4ded5a053339be1204a0605e0c735907a399cc2b75",
-          "bytes": 3962
+          "sha256": "82e5844a4193d1f1d2ef59a7cd8f534bc0f6afa4d650edf8cbfd83ef0e2c80f0",
+          "bytes": 4457
         },
         {
           "path": "contracts/01-upgradeable/ExampleTimelock.sol",
-          "sha256": "7d62b2b30ee61b33feb723b2d00e81283f3c04fe3924b4f22141debbd559749c",
-          "bytes": 4726
+          "sha256": "e9165056603007e347e1b6c9bc98e9e0675b0810abe1ea4692a268b71cd8bdeb",
+          "bytes": 5000
         },
         {
           "path": "remix-tests/collectible_test.sol",
-          "sha256": "7a721e5775449adec3c1b36f573e3dd7c07adf69ffb24f451d26bee908f2b124",
-          "bytes": 1585
+          "sha256": "e3c68f96c7d0fd5a812cfdbfe4266b1f7100975568c6a01e2ea2899d1476dfcc",
+          "bytes": 1682
         },
         {
           "path": "tests/support/Receivers.sol",
-          "sha256": "6aa40e1a8837ad9a14ad587909937401d6c6f0b09c66d2db8dbcebfb451c2e56",
-          "bytes": 1111
+          "sha256": "d1f5d264bcf312a294b1ab718516ce471df7fbf3c0fae00f300138b4e667a769",
+          "bytes": 1295
         },
         {
           "path": "tests/test_collectible.py",

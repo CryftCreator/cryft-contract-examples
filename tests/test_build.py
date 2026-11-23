@@ -41,10 +41,11 @@ def test_each_example_has_a_readme_and_safety_notes():
         assert "## Safety" in readme and "starting point" in readme.lower(), example
     for sol in (ROOT / "contracts").rglob("*.sol"):
         text = sol.read_text()
-        assert text.startswith("// SPDX-License-Identifier: Apache-2.0\npragma solidity >=0.8.20 <0.9.0;"), sol.name
+        assert re.match(r"// SPDX-License-Identifier: (Apache-2\.0|MIT)\n", text), f"{sol.name}: an SPDX line (test_provenance checks which)"
+        assert "\npragma solidity >=0.8.20 <0.9.0;\n" in text, sol.name
         assert "tx.origin" not in re.sub(r"//.*", "", text), f"{sol.name}: identity is msg.sender, never tx.origin"
         assert not re.search(r"\bselfdestruct\b|while\s*\(\s*true\s*\)|for\s*\(\s*;\s*;", text), f"{sol.name}: no unbounded loops"
-        assert "PRIVATE DESIGN" not in text, f"{sol.name}: nothing from private designs"
+        assert "PRIVATE " + "DESIGN" not in text, f"{sol.name}: nothing from private designs"
 
 
 def test_the_verification_input_rebuilds_the_same_code(built):

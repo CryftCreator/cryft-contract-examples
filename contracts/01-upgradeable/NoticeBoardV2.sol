@@ -1,4 +1,6 @@
 // SPDX-License-Identifier: Apache-2.0
+// Copyright (c) 2026 Cryft Labs. Written for these examples.
+// See NOTICE and provenance.json.
 pragma solidity >=0.8.20 <0.9.0;
 
 import "./NoticeBoardV1.sol";

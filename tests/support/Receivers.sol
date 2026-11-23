@@ -1,4 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
+// Copyright (c) 2026 Cryft Labs. Written for these examples.
+// Follows ethereum/ERCs/ERCS/erc-1155.md, CC0-1.0 (a standard; no copyright claimed).
+// See NOTICE and provenance.json.
 pragma solidity >=0.8.20 <0.9.0;
 
 /// @notice Test stand-ins: a contract that accepts ERC-1155 items, and one that refuses them (tests only).

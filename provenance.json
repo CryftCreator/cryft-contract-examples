@@ -1,0 +1,193 @@
+{
+  "schema": 1,
+  "about": "Where every Solidity file here comes from, and its licence. Originals are cited by their public source: a public repository at a commit, or a contract's verified source on the Cryft Network explorer. tests/test_provenance.py checks each file's SPDX line and header against this table, and that NOTICE lists every upstream.",
+  "upstreams": {
+    "cryft-card-vault-proxy": {
+      "contract": "CardVaultProxy",
+      "publisher": "Cryft Labs",
+      "verified": "https://explore.dakota.cards/address/0x12F2DCCfd6EA97F236f22120610a9B8c405ec621",
+      "license": "Apache-2.0",
+      "copyright": "Copyright (c) 2023-2026 Cryft Labs"
+    },
+    "cryft-card-vault-timelock": {
+      "contract": "CardVaultTimelockV2",
+      "publisher": "Cryft Labs",
+      "verified": "https://explore.dakota.cards/address/0xd3bD4E82F38888Bd229de5bb392344Deb21e8407",
+      "license": "Apache-2.0",
+      "copyright": "Copyright (c) 2023-2026 Cryft Labs"
+    },
+    "cryft-cards-v8-2": {
+      "contract": "CryftCardsV8_2",
+      "publisher": "Cryft Labs",
+      "verified": "https://explore.dakota.cards/address/0xb251095a39Ff74e317657Ce09Ec2fdEd4f479A11",
+      "license": "Apache-2.0",
+      "copyright": "Copyright (c) 2023-2026 Cryft Labs"
+    },
+    "cryft-giftables": {
+      "contract": "GiftablesV2_3",
+      "publisher": "Cryft Labs",
+      "verified": "https://explore.dakota.cards/address/0xF743c2b2Ff6EE304EE678313FdF4a059fa683636",
+      "license": "MIT",
+      "copyright": "Copyright (c) 2026 Cryft Labs"
+    },
+    "dakota-initializable": {
+      "repository": "cryft-labs/dakota-network",
+      "path": "Contracts/Genesis/Upgradeable/Initializable.sol",
+      "commit": "05155f70b4e37e381b116695dbe0109c8c82883c",
+      "license": "MIT",
+      "copyright": "Modifications Copyright (c) 2026 Cryft Labs"
+    },
+    "dakota-itenant-allowance-policy": {
+      "repository": "cryft-labs/dakota-network",
+      "path": "Contracts/Genesis/7702/Interfaces/ITenantAllowancePolicy.sol",
+      "commit": "0d1696a6a70ebc3a347d9af0eff25755a75a14ca",
+      "license": "Apache-2.0",
+      "copyright": "Copyright (c) 2026 Cryft Labs"
+    },
+    "dakota-tenant-allowance-policy": {
+      "repository": "cryft-labs/dakota-network",
+      "path": "Contracts/Templates/TenantAllowancePolicy.sol",
+      "commit": "9019cad324802c825d56117fd787c2a0f3ec1394",
+      "license": "Apache-2.0",
+      "copyright": "Copyright (c) 2026 Cryft Labs"
+    },
+    "openzeppelin-upgradeable-initializable": {
+      "repository": "OpenZeppelin/openzeppelin-contracts-upgradeable",
+      "path": "contracts/proxy/utils/Initializable.sol",
+      "commit": "v4.9.6",
+      "license": "MIT",
+      "copyright": "Copyright (c) 2016-2023 zOS Global Limited and contributors"
+    },
+    "openzeppelin-proxy": {
+      "repository": "OpenZeppelin/openzeppelin-contracts",
+      "path": "contracts/proxy/Proxy.sol",
+      "commit": "v4.9.6",
+      "license": "MIT",
+      "copyright": "Copyright (c) 2016-2023 zOS Global Limited and contributors"
+    },
+    "openzeppelin-erc1155": {
+      "repository": "OpenZeppelin/openzeppelin-contracts",
+      "path": "contracts/token/ERC1155/ERC1155.sol",
+      "commit": "v4.9.6",
+      "license": "MIT",
+      "copyright": "Copyright (c) 2016-2023 zOS Global Limited and contributors"
+    },
+    "eip-1967": {
+      "repository": "ethereum/ERCs",
+      "path": "ERCS/erc-1967.md",
+      "commit": "final",
+      "license": "CC0-1.0",
+      "copyright": "Copyright and related rights waived via CC0"
+    },
+    "eip-1155": {
+      "repository": "ethereum/ERCs",
+      "path": "ERCS/erc-1155.md",
+      "commit": "final",
+      "license": "CC0-1.0",
+      "copyright": "Copyright and related rights waived via CC0"
+    }
+  },
+  "files": {
+    "contracts/01-upgradeable/ExampleProxy.sol": {
+      "license": "Apache-2.0",
+      "adapted_from": "cryft-card-vault-proxy",
+      "portions": [
+        "openzeppelin-proxy",
+        "eip-1967"
+      ]
+    },
+    "contracts/01-upgradeable/ExampleTimelock.sol": {
+      "license": "Apache-2.0",
+      "adapted_from": "cryft-card-vault-timelock",
+      "portions": []
+    },
+    "contracts/01-upgradeable/Initializable.sol": {
+      "license": "MIT",
+      "adapted_from": "dakota-initializable",
+      "portions": [
+        "openzeppelin-upgradeable-initializable"
+      ]
+    },
+    "contracts/01-upgradeable/NoticeBoardV1.sol": {
+      "license": "Apache-2.0",
+      "adapted_from": null,
+      "portions": []
+    },
+    "contracts/01-upgradeable/NoticeBoardV2.sol": {
+      "license": "Apache-2.0",
+      "adapted_from": null,
+      "portions": []
+    },
+    "contracts/02-card-reads/CardStatusReader.sol": {
+      "license": "Apache-2.0",
+      "adapted_from": null,
+      "portions": []
+    },
+    "contracts/02-card-reads/ICryftCardsRead.sol": {
+      "license": "Apache-2.0",
+      "adapted_from": "cryft-cards-v8-2",
+      "portions": []
+    },
+    "contracts/03-sponsored-gas/ITenantAllowancePolicy.sol": {
+      "license": "Apache-2.0",
+      "adapted_from": "dakota-itenant-allowance-policy",
+      "portions": []
+    },
+    "contracts/03-sponsored-gas/SponsoredGuestbook.sol": {
+      "license": "Apache-2.0",
+      "adapted_from": null,
+      "portions": []
+    },
+    "contracts/03-sponsored-gas/WalletDailyPolicy.sol": {
+      "license": "Apache-2.0",
+      "adapted_from": "dakota-tenant-allowance-policy",
+      "portions": []
+    },
+    "contracts/04-collectible-1155/CollectibleItems.sol": {
+      "license": "MIT",
+      "adapted_from": "cryft-giftables",
+      "portions": [
+        "openzeppelin-erc1155",
+        "eip-1155"
+      ]
+    },
+    "remix-tests/card_reads_test.sol": {
+      "license": "Apache-2.0",
+      "adapted_from": null,
+      "portions": []
+    },
+    "remix-tests/collectible_test.sol": {
+      "license": "Apache-2.0",
+      "adapted_from": null,
+      "portions": []
+    },
+    "remix-tests/sponsored_gas_test.sol": {
+      "license": "Apache-2.0",
+      "adapted_from": null,
+      "portions": []
+    },
+    "remix-tests/upgradeable_test.sol": {
+      "license": "Apache-2.0",
+      "adapted_from": null,
+      "portions": []
+    },
+    "tests/remix_stub/remix_tests.sol": {
+      "license": "Apache-2.0",
+      "adapted_from": null,
+      "portions": [],
+      "note": "Written for these examples with the same call shape as Remix's remix_tests.sol (no Remix code copied); Remix supplies its own at run time."
+    },
+    "tests/support/MockCards.sol": {
+      "license": "Apache-2.0",
+      "adapted_from": null,
+      "portions": []
+    },
+    "tests/support/Receivers.sol": {
+      "license": "Apache-2.0",
+      "adapted_from": null,
+      "portions": [
+        "eip-1155"
+      ]
+    }
+  }
+}

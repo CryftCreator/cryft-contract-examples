@@ -1,4 +1,9 @@
 // SPDX-License-Identifier: Apache-2.0
+// Copyright (c) 2026 Cryft Labs (this adaptation).
+// Adapted from CardVaultProxy (Cryft Labs), verified source at https://explore.dakota.cards/address/0x12F2DCCfd6EA97F236f22120610a9B8c405ec621, Apache-2.0, © 2023-2026 Cryft Labs.
+// Portions derived from OpenZeppelin Contracts v4.9.6 (contracts/proxy/Proxy.sol), MIT, © 2016-2023 zOS Global Limited and contributors.
+// Follows ethereum/ERCs/ERCS/erc-1967.md, CC0-1.0 (a standard; no copyright claimed).
+// See NOTICE and provenance.json.
 pragma solidity >=0.8.20 <0.9.0;
 
 /// @title ExampleProxy

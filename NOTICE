@@ -1,8 +1,68 @@
 Cryft platform contract examples
 Copyright (c) 2026 Cryft Labs
 
-Licensed under the Apache License, Version 2.0 (see LICENSE).
+Licensed file by file under the Apache License, Version 2.0 (LICENSE-APACHE) or the MIT License (LICENSE-MIT); see
+LICENSE for which is which, and provenance.json for every Solidity file's licence and origin.
 
-These are starting points, not audited products. Review, test and audit your own code before you deploy it
-with real value. The patterns are adapted from contracts Cryft runs on the Cryft Network (Dakota); the
-adaptations are simplified for teaching and are not the deployed contracts.
+These are starting points, not audited products. Review, test and audit your own code before you deploy it with real
+value. The patterns are adapted from contracts Cryft runs on the Cryft Network (Dakota); the adaptations are simplified
+for teaching and are not the deployed contracts.
+
+Originals (Cryft Labs)
+----------------------
+- CardVaultProxy (Cryft Labs), verified source at https://explore.dakota.cards/address/0x12F2DCCfd6EA97F236f22120610a9B8c405ec621
+  Apache-2.0. Copyright (c) 2023-2026 Cryft Labs.  -> contracts/01-upgradeable/ExampleProxy.sol
+- CardVaultTimelockV2 (Cryft Labs), verified source at https://explore.dakota.cards/address/0xd3bD4E82F38888Bd229de5bb392344Deb21e8407
+  Apache-2.0. Copyright (c) 2023-2026 Cryft Labs.  -> contracts/01-upgradeable/ExampleTimelock.sol
+- CryftCardsV8_2 (Cryft Labs), verified source at https://explore.dakota.cards/address/0xb251095a39Ff74e317657Ce09Ec2fdEd4f479A11
+  Apache-2.0. Copyright (c) 2023-2026 Cryft Labs.  -> contracts/02-card-reads/ICryftCardsRead.sol
+- GiftablesV2_3 (Cryft Labs), verified source at https://explore.dakota.cards/address/0xF743c2b2Ff6EE304EE678313FdF4a059fa683636
+  MIT. Copyright (c) 2026 Cryft Labs.  -> contracts/04-collectible-1155/CollectibleItems.sol
+- cryft-labs/dakota-network Contracts/Genesis/Upgradeable/Initializable.sol @ 05155f70b4e37e381b116695dbe0109c8c82883c
+  MIT. Modifications Copyright (c) 2026 Cryft Labs.  -> contracts/01-upgradeable/Initializable.sol
+- cryft-labs/dakota-network Contracts/Genesis/7702/Interfaces/ITenantAllowancePolicy.sol @ 0d1696a6a70ebc3a347d9af0eff25755a75a14ca
+  Apache-2.0. Copyright (c) 2026 Cryft Labs.  -> contracts/03-sponsored-gas/ITenantAllowancePolicy.sol
+- cryft-labs/dakota-network Contracts/Templates/TenantAllowancePolicy.sol @ 9019cad324802c825d56117fd787c2a0f3ec1394
+  Apache-2.0. Copyright (c) 2026 Cryft Labs.  -> contracts/03-sponsored-gas/WalletDailyPolicy.sol
+
+Third-party upstream: OpenZeppelin Contracts v4.9.6 (MIT)
+---------------------------------------------------------
+- OpenZeppelin/openzeppelin-contracts-upgradeable contracts/proxy/utils/Initializable.sol @ v4.9.6
+  -> contracts/01-upgradeable/Initializable.sol (through Cryft's Initializable)
+- OpenZeppelin/openzeppelin-contracts contracts/proxy/Proxy.sol @ v4.9.6 (the delegatecall forwarding)
+  -> contracts/01-upgradeable/ExampleProxy.sol
+- OpenZeppelin/openzeppelin-contracts contracts/token/ERC1155/ERC1155.sol @ v4.9.6 (the receiver acceptance check)
+  -> contracts/04-collectible-1155/CollectibleItems.sol
+
+  The MIT License (MIT)
+
+  Copyright (c) 2016-2023 zOS Global Limited and contributors
+
+  Permission is hereby granted, free of charge, to any person obtaining
+  a copy of this software and associated documentation files (the
+  "Software"), to deal in the Software without restriction, including
+  without limitation the rights to use, copy, modify, merge, publish,
+  distribute, sublicense, and/or sell copies of the Software, and to
+  permit persons to whom the Software is furnished to do so, subject to
+  the following conditions:
+
+  The above copyright notice and this permission notice shall be included
+  in all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+  OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+  IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+  CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+  TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Standards (CC0-1.0, no copyright claimed)
+-----------------------------------------
+- ethereum/ERCs ERCS/erc-1967.md (ERC-1967 proxy storage slots)  -> contracts/01-upgradeable/ExampleProxy.sol
+- ethereum/ERCs ERCS/erc-1155.md (ERC-1155 and its receiver interface)  -> CollectibleItems.sol, tests/support/Receivers.sol
+
+Interoperates with (no code copied)
+-----------------------------------
+- Remix (remix-project-org/remix-project, MIT): tests/remix_stub/remix_tests.sol is written for these examples with the
+  same call shape as Remix's remix_tests.sol, so the Remix tests also run under pytest. Remix supplies its own at run time.

@@ -1,4 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
+// Copyright (c) 2026 Cryft Labs (this adaptation).
+// Adapted from CardVaultTimelockV2 (Cryft Labs), verified source at https://explore.dakota.cards/address/0xd3bD4E82F38888Bd229de5bb392344Deb21e8407, Apache-2.0, © 2023-2026 Cryft Labs.
+// See NOTICE and provenance.json.
 pragma solidity >=0.8.20 <0.9.0;
 
 interface IExampleProxy {

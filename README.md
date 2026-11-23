@@ -91,6 +91,31 @@ release tag of this repo, checks every file against this list before saving it, 
 `.venv/bin/python tools/make_index.py` after any change (`tests/test_index.py` fails while it is out of date), bump `VERSION`
 for a release, and tag `v<VERSION>`.
 
-## Licence
+## Licences
 
-Apache-2.0 (see [LICENSE](LICENSE) and [NOTICE](NOTICE)).
+File by file, each matching the contract it came from: **MIT** for `Initializable.sol` and `CollectibleItems.sol`,
+**Apache-2.0** for everything else. [LICENSE](LICENSE) says which is which, with the full texts in
+[LICENSE-MIT](LICENSE-MIT) and [LICENSE-APACHE](LICENSE-APACHE); [NOTICE](NOTICE) lists every original and upstream
+with its copyright (including OpenZeppelin's MIT licence); [provenance.json](provenance.json) is the table below as
+data, and `tools/provenance.py` writes each file's header from it (`tests/test_provenance.py` checks them).
+
+| File | Licence | Origin |
+|---|---|---|
+| `contracts/01-upgradeable/ExampleProxy.sol` | Apache-2.0 | Adapted from [CardVaultProxy](https://explore.dakota.cards/address/0x12F2DCCfd6EA97F236f22120610a9B8c405ec621) (verified, Apache-2.0); portions: OpenZeppelin Contracts v4.9.6 `contracts/proxy/Proxy.sol` (MIT), `erc-1967.md` standard (CC0-1.0) |
+| `contracts/01-upgradeable/ExampleTimelock.sol` | Apache-2.0 | Adapted from [CardVaultTimelockV2](https://explore.dakota.cards/address/0xd3bD4E82F38888Bd229de5bb392344Deb21e8407) (verified, Apache-2.0) |
+| `contracts/01-upgradeable/Initializable.sol` | MIT | Adapted from `cryft-labs/dakota-network` `Contracts/Genesis/Upgradeable/Initializable.sol` @ `05155f70b4e3` (MIT); portions: OpenZeppelin Contracts v4.9.6 `contracts/proxy/utils/Initializable.sol` (MIT) |
+| `contracts/01-upgradeable/NoticeBoardV1.sol` | Apache-2.0 | Written for these examples |
+| `contracts/01-upgradeable/NoticeBoardV2.sol` | Apache-2.0 | Written for these examples |
+| `contracts/02-card-reads/CardStatusReader.sol` | Apache-2.0 | Written for these examples |
+| `contracts/02-card-reads/ICryftCardsRead.sol` | Apache-2.0 | Adapted from [CryftCardsV8_2](https://explore.dakota.cards/address/0xb251095a39Ff74e317657Ce09Ec2fdEd4f479A11) (verified, Apache-2.0) |
+| `contracts/03-sponsored-gas/ITenantAllowancePolicy.sol` | Apache-2.0 | Adapted from `cryft-labs/dakota-network` `Contracts/Genesis/7702/Interfaces/ITenantAllowancePolicy.sol` @ `0d1696a6a70e` (Apache-2.0) |
+| `contracts/03-sponsored-gas/SponsoredGuestbook.sol` | Apache-2.0 | Written for these examples |
+| `contracts/03-sponsored-gas/WalletDailyPolicy.sol` | Apache-2.0 | Adapted from `cryft-labs/dakota-network` `Contracts/Templates/TenantAllowancePolicy.sol` @ `9019cad32480` (Apache-2.0) |
+| `contracts/04-collectible-1155/CollectibleItems.sol` | MIT | Adapted from [GiftablesV2_3](https://explore.dakota.cards/address/0xF743c2b2Ff6EE304EE678313FdF4a059fa683636) (verified, MIT); portions: OpenZeppelin Contracts v4.9.6 `contracts/token/ERC1155/ERC1155.sol` (MIT), `erc-1155.md` standard (CC0-1.0) |
+| `remix-tests/card_reads_test.sol` | Apache-2.0 | Written for these examples |
+| `remix-tests/collectible_test.sol` | Apache-2.0 | Written for these examples |
+| `remix-tests/sponsored_gas_test.sol` | Apache-2.0 | Written for these examples |
+| `remix-tests/upgradeable_test.sol` | Apache-2.0 | Written for these examples |
+| `tests/remix_stub/remix_tests.sol` | Apache-2.0 | Written for these examples |
+| `tests/support/MockCards.sol` | Apache-2.0 | Written for these examples |
+| `tests/support/Receivers.sol` | Apache-2.0 | Written for these examples; portions: `erc-1155.md` standard (CC0-1.0) |

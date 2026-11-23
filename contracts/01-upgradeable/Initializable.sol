@@ -1,4 +1,8 @@
-// SPDX-License-Identifier: Apache-2.0
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 Cryft Labs (this adaptation).
+// Adapted from cryft-labs/dakota-network/Contracts/Genesis/Upgradeable/Initializable.sol @ 05155f70b4e3, MIT, Modifications © 2026 Cryft Labs.
+// Portions derived from OpenZeppelin Contracts Upgradeable v4.9.6 (contracts/proxy/utils/Initializable.sol), MIT, © 2016-2023 zOS Global Limited and contributors.
+// See NOTICE and provenance.json.
 pragma solidity >=0.8.20 <0.9.0;
 
 /// @title Initializable

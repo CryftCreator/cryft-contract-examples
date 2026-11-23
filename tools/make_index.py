@@ -12,14 +12,15 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 REPOSITORY = "https://github.com/CryftCreator/cryft-contract-examples"
 FILES_MOST = 200
 FILE_BYTES_MOST = 256 * 1024
 
-SHARED = ["README.md", "LICENSE", "NOTICE", "compiler.json", "requirements.txt", ".gitignore",
+SHARED = ["README.md", "LICENSE", "LICENSE-APACHE", "LICENSE-MIT", "NOTICE", "provenance.json", "compiler.json", "requirements.txt", ".gitignore",
           "tests/conftest.py", "tests/test_build.py", "tests/test_remix_tests.py", "tests/remix_stub/remix_tests.sol",
-          "tools/standard_input.py", "tools/make_index.py", "tests/test_index.py"]
+          "tools/standard_input.py", "tools/make_index.py", "tools/provenance.py", "tests/test_index.py",
+          "tests/test_provenance.py"]
 EXAMPLES = [
     {"id": "01-upgradeable", "title": "Upgradeable, behind a proxy, with a timelock",
      "summary": "An ERC-1967 proxy whose address never changes, a timelock admin, and a V1 → V2 upgrade that keeps the data.",

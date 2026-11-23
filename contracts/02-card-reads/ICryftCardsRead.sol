@@ -1,4 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
+// Copyright (c) 2026 Cryft Labs (this adaptation).
+// Adapted from CryftCardsV8_2 (Cryft Labs), verified source at https://explore.dakota.cards/address/0xb251095a39Ff74e317657Ce09Ec2fdEd4f479A11, Apache-2.0, © 2023-2026 Cryft Labs.
+// See NOTICE and provenance.json.
 pragma solidity >=0.8.20 <0.9.0;
 
 /// @notice The read-only part of Cryft Cards (V8.2), the card NFT collection. These functions are on the verified

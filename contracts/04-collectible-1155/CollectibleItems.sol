@@ -1,4 +1,9 @@
-// SPDX-License-Identifier: Apache-2.0
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 Cryft Labs (this adaptation).
+// Adapted from GiftablesV2_3 (Cryft Labs), verified source at https://explore.dakota.cards/address/0xF743c2b2Ff6EE304EE678313FdF4a059fa683636, MIT, © 2026 Cryft Labs.
+// Portions derived from OpenZeppelin Contracts v4.9.6 (contracts/token/ERC1155/ERC1155.sol), MIT, © 2016-2023 zOS Global Limited and contributors.
+// Follows ethereum/ERCs/ERCS/erc-1155.md, CC0-1.0 (a standard; no copyright claimed).
+// See NOTICE and provenance.json.
 pragma solidity >=0.8.20 <0.9.0;
 
 import "../01-upgradeable/Initializable.sol";

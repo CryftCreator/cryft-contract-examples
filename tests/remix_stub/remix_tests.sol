@@ -1,4 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
+// Copyright (c) 2026 Cryft Labs. Written for these examples.
+// Written for these examples with the same call shape as Remix's remix_tests.sol (no Remix code copied); Remix supplies its own at run time.
+// See NOTICE and provenance.json.
 pragma solidity >=0.8.20 <0.9.0;
 
 /// @notice A stand-in for Remix's own "remix_tests.sol" (which Remix provides at run time), so the Remix tests can also be

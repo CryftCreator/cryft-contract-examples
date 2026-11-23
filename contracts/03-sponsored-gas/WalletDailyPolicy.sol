@@ -1,4 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
+// Copyright (c) 2026 Cryft Labs (this adaptation).
+// Adapted from cryft-labs/dakota-network/Contracts/Templates/TenantAllowancePolicy.sol @ 9019cad32480, Apache-2.0, © 2026 Cryft Labs.
+// See NOTICE and provenance.json.
 pragma solidity >=0.8.20 <0.9.0;
 
 import "./ITenantAllowancePolicy.sol";
