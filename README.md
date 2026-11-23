@@ -84,6 +84,13 @@ never holds your keys. In Remix: Deploy & run → Environment "Injected Provider
 
 More in the docs: [Build safely](https://docs.cryft.cards/#build-safely).
 
+## The shared-contracts library
+
+`index.json` lists every example, its files, and each file's sha256. The code editor (code.cryft.cards) fetches a pinned
+release tag of this repo, checks every file against this list before saving it, and refuses any mismatch. Regenerate it with
+`.venv/bin/python tools/make_index.py` after any change (`tests/test_index.py` fails while it is out of date), bump `VERSION`
+for a release, and tag `v<VERSION>`.
+
 ## Licence
 
 Apache-2.0 (see [LICENSE](LICENSE) and [NOTICE](NOTICE)).

@@ -1,0 +1,259 @@
+{
+  "schema": 1,
+  "name": "cryft-contract-examples",
+  "version": "1.0.0",
+  "tag": "v1.0.0",
+  "repository": "https://github.com/CryftCreator/cryft-contract-examples",
+  "compiler": {
+    "solc": "0.8.37",
+    "evmVersion": "shanghai",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "dakotaCodeSizeMost": 32768,
+    "baseCodeSizeMost": 24576
+  },
+  "shared": [
+    {
+      "path": "README.md",
+      "sha256": "0c17e3a14f3a6432dc719318de6873ca8dab12647ad59b2d0175e9ca5d6f391f",
+      "bytes": 5176
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "75fb1f41b8c122bf88271ad5890244b9e7ad81e9c1c5354e2cc5e6762a5e3435",
+      "bytes": 11769
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "9c60c882279621f8fd92d1cfef8ba6beac91195e5ea3381bb82d4f6dcbbb100e",
+      "bytes": 413
+    },
+    {
+      "path": "compiler.json",
+      "sha256": "1b6e0946fe2d6285ff35f639e821a56dd0360e94c7d403646ffbe90c8b150a6e",
+      "bytes": 160
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "bb7c8d023a9cebc890c8f0e25c4b5e07118f78ee07f0bdd2507f49d75347a930",
+      "bytes": 207
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "e0de6d44b39ae67af64b3fe003b02bbd2795ed774e0c4aa006d7463effedc486",
+      "bytes": 42
+    },
+    {
+      "path": "tests/conftest.py",
+      "sha256": "70c979da5dfec1ec708a42fed7c9ebe6302c4ee4e59e9aaf9c2cc810d9755f51",
+      "bytes": 5001
+    },
+    {
+      "path": "tests/test_build.py",
+      "sha256": "4485dae4cc0ef540a81911fbe8fa5d1ef337b72638daaff2bf6ccd85737f6d2d",
+      "bytes": 3419
+    },
+    {
+      "path": "tests/test_remix_tests.py",
+      "sha256": "3530baa911e994d1109d86642a4123a4845d1a581501409007a618e88eac992e",
+      "bytes": 1880
+    },
+    {
+      "path": "tests/remix_stub/remix_tests.sol",
+      "sha256": "ad27b9f335235c4bd8cfb523c24e0fb7d89fcc1d672088c22b87a23655337229",
+      "bytes": 1690
+    },
+    {
+      "path": "tools/standard_input.py",
+      "sha256": "568a81272941b0bf82a93b18c5f9566b97431513947eb970d11183c9f20f86e5",
+      "bytes": 2408
+    },
+    {
+      "path": "tools/make_index.py",
+      "sha256": "e5620806b1d296208aaee37ce0de4b578f977dd3bc15bc5497696c04995defb4",
+      "bytes": 4170
+    },
+    {
+      "path": "tests/test_index.py",
+      "sha256": "05e66c9a4a57112c64113b91cff60ba3841a7c26bc0e574c4e098981170a49b2",
+      "bytes": 394
+    }
+  ],
+  "examples": [
+    {
+      "id": "01-upgradeable",
+      "title": "Upgradeable, behind a proxy, with a timelock",
+      "summary": "An ERC-1967 proxy whose address never changes, a timelock admin, and a V1 → V2 upgrade that keeps the data.",
+      "files": [
+        {
+          "path": "contracts/01-upgradeable/ExampleProxy.sol",
+          "sha256": "2b3112533f2e155f77ad7e4ded5a053339be1204a0605e0c735907a399cc2b75",
+          "bytes": 3962
+        },
+        {
+          "path": "contracts/01-upgradeable/ExampleTimelock.sol",
+          "sha256": "7d62b2b30ee61b33feb723b2d00e81283f3c04fe3924b4f22141debbd559749c",
+          "bytes": 4726
+        },
+        {
+          "path": "contracts/01-upgradeable/Initializable.sol",
+          "sha256": "77b8ad9b86242679d943e85e0e277ed6d9d3ef9ebf25a98de07acb206bacf807",
+          "bytes": 2134
+        },
+        {
+          "path": "contracts/01-upgradeable/NoticeBoardV1.sol",
+          "sha256": "e1dfe20442f9317f1583071a64957fee7fa2affb80e62b9d52b6b3885eac1734",
+          "bytes": 2751
+        },
+        {
+          "path": "contracts/01-upgradeable/NoticeBoardV2.sol",
+          "sha256": "6f7fb2b074e95f8b2e6c831b189c7309b03e45edbadaeb55cd4db570b0e8db32",
+          "bytes": 1553
+        },
+        {
+          "path": "contracts/01-upgradeable/README.md",
+          "sha256": "690734c66a94737087abc888583e7a285e74bcf68965174a29f7c5033c29fe15",
+          "bytes": 1687
+        },
+        {
+          "path": "remix-tests/upgradeable_test.sol",
+          "sha256": "7ef21e978981654879696d1e724533ee2e0e767b099ebe269e5d5e50953a2dd9",
+          "bytes": 2075
+        },
+        {
+          "path": "tests/test_upgradeable.py",
+          "sha256": "81cac209fe729fea36ba6118653f9757bb3ea59eefbfc94425d2863198e8d6f9",
+          "bytes": 4630
+        }
+      ]
+    },
+    {
+      "id": "02-card-reads",
+      "title": "Reading a Cryft card",
+      "summary": "A Cryft card's public status in one call, and gating your own contract on a live, opened card.",
+      "files": [
+        {
+          "path": "contracts/02-card-reads/CardStatusReader.sol",
+          "sha256": "ebcfe3a3eced0c7d53589a52b9ee5575951e941f10505be4edb593a3c4ef06b2",
+          "bytes": 3676
+        },
+        {
+          "path": "contracts/02-card-reads/ICryftCardsRead.sol",
+          "sha256": "29bc4590a7078328935d42d422d30da762a6396d97531b5d94669da18286266d",
+          "bytes": 1931
+        },
+        {
+          "path": "contracts/02-card-reads/README.md",
+          "sha256": "fed6071aa83f1467b927439e11bdae1eaa5f8a4bc5de495a4e086a62bc88b42b",
+          "bytes": 1446
+        },
+        {
+          "path": "remix-tests/card_reads_test.sol",
+          "sha256": "e71d52401d6044268dfdf094a508d6d47ebde22a5b73d91355ce93a899849afb",
+          "bytes": 1160
+        },
+        {
+          "path": "tests/support/MockCards.sol",
+          "sha256": "941faf8d0b275293b10cffc2aeccee37c6b6e920daee8f974225100700fc44b0",
+          "bytes": 1584
+        },
+        {
+          "path": "tests/test_card_reads.py",
+          "sha256": "8dc426dc860a281e07b5d85a699da0f0e64f6b06c51b925495a32caedd71911e",
+          "bytes": 2374
+        }
+      ]
+    },
+    {
+      "id": "03-sponsored-gas",
+      "title": "Built for developer gas sponsorship",
+      "summary": "A contract written to be called through sponsorship, and a per-wallet daily policy for your gas account.",
+      "files": [
+        {
+          "path": "contracts/03-sponsored-gas/ITenantAllowancePolicy.sol",
+          "sha256": "9ca8c25b99c5e2c9723e947e7962f48949de9b72405626535bb0bc21f49cb3be",
+          "bytes": 763
+        },
+        {
+          "path": "contracts/03-sponsored-gas/README.md",
+          "sha256": "bba4abbfff124ba053e1accf7f6688c8d691b66b83fdbe9072dae3e18549a01e",
+          "bytes": 1701
+        },
+        {
+          "path": "contracts/03-sponsored-gas/SponsoredGuestbook.sol",
+          "sha256": "75e59c7f5c15c2297a13644618ceb0489c16cf86efc2309cabb5c3d64ba9d7af",
+          "bytes": 2054
+        },
+        {
+          "path": "contracts/03-sponsored-gas/WalletDailyPolicy.sol",
+          "sha256": "5ef3f946d1df7606a9313bf169150461d1dce5d152529812ae8bcca6669a3c3f",
+          "bytes": 8482
+        },
+        {
+          "path": "remix-tests/sponsored_gas_test.sol",
+          "sha256": "6fa0cd3271f8903a871fea4e48f40bfc07cacf14b1ef76f3701a41c0ab613c8d",
+          "bytes": 1415
+        },
+        {
+          "path": "tests/support/Receivers.sol",
+          "sha256": "6aa40e1a8837ad9a14ad587909937401d6c6f0b09c66d2db8dbcebfb451c2e56",
+          "bytes": 1111
+        },
+        {
+          "path": "tests/test_sponsored_gas.py",
+          "sha256": "8bf329193f0d5976e64a652049a366a89b95222a6601f2a8617bf687bda594eb",
+          "bytes": 3837
+        }
+      ]
+    },
+    {
+      "id": "04-collectible-1155",
+      "title": "ERC-1155 items for cards",
+      "summary": "One-of-one items with a kind, a privacy flag and their own metadata, no approvals, behind the example proxy.",
+      "files": [
+        {
+          "path": "contracts/04-collectible-1155/CollectibleItems.sol",
+          "sha256": "012cb6f60c44190021c902d2386369da5dab2f33b8cf68798ec6e9c48c4bdc19",
+          "bytes": 10028
+        },
+        {
+          "path": "contracts/04-collectible-1155/README.md",
+          "sha256": "c297907ee803b323a13661be0f9f85aad8893f1e6637595b60ebb869f418ce23",
+          "bytes": 1423
+        },
+        {
+          "path": "contracts/01-upgradeable/Initializable.sol",
+          "sha256": "77b8ad9b86242679d943e85e0e277ed6d9d3ef9ebf25a98de07acb206bacf807",
+          "bytes": 2134
+        },
+        {
+          "path": "contracts/01-upgradeable/ExampleProxy.sol",
+          "sha256": "2b3112533f2e155f77ad7e4ded5a053339be1204a0605e0c735907a399cc2b75",
+          "bytes": 3962
+        },
+        {
+          "path": "contracts/01-upgradeable/ExampleTimelock.sol",
+          "sha256": "7d62b2b30ee61b33feb723b2d00e81283f3c04fe3924b4f22141debbd559749c",
+          "bytes": 4726
+        },
+        {
+          "path": "remix-tests/collectible_test.sol",
+          "sha256": "7a721e5775449adec3c1b36f573e3dd7c07adf69ffb24f451d26bee908f2b124",
+          "bytes": 1585
+        },
+        {
+          "path": "tests/support/Receivers.sol",
+          "sha256": "6aa40e1a8837ad9a14ad587909937401d6c6f0b09c66d2db8dbcebfb451c2e56",
+          "bytes": 1111
+        },
+        {
+          "path": "tests/test_collectible.py",
+          "sha256": "bc3bd2bac1d7370941bfcb740f2290c55ab69742b23ef99f1261b44d853b6c33",
+          "bytes": 3348
+        }
+      ]
+    }
+  ]
+}
