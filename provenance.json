@@ -5,28 +5,28 @@
     "cryft-card-vault-proxy": {
       "contract": "CardVaultProxy",
       "publisher": "Cryft Labs",
-      "verified": "https://explore.dakota.cards/address/0x12F2DCCfd6EA97F236f22120610a9B8c405ec621",
+      "verified": "https://explore.cryft.cards/address/0x12F2DCCfd6EA97F236f22120610a9B8c405ec621",
       "license": "Apache-2.0",
       "copyright": "Copyright (c) 2023-2026 Cryft Labs"
     },
     "cryft-card-vault-timelock": {
       "contract": "CardVaultTimelockV2",
       "publisher": "Cryft Labs",
-      "verified": "https://explore.dakota.cards/address/0xd3bD4E82F38888Bd229de5bb392344Deb21e8407",
+      "verified": "https://explore.cryft.cards/address/0xd3bD4E82F38888Bd229de5bb392344Deb21e8407",
       "license": "Apache-2.0",
       "copyright": "Copyright (c) 2023-2026 Cryft Labs"
     },
     "cryft-cards-v8-2": {
       "contract": "CryftCardsV8_2",
       "publisher": "Cryft Labs",
-      "verified": "https://explore.dakota.cards/address/0xb251095a39Ff74e317657Ce09Ec2fdEd4f479A11",
+      "verified": "https://explore.cryft.cards/address/0xb251095a39Ff74e317657Ce09Ec2fdEd4f479A11",
       "license": "Apache-2.0",
       "copyright": "Copyright (c) 2023-2026 Cryft Labs"
     },
     "cryft-giftables": {
       "contract": "GiftablesV2_3",
       "publisher": "Cryft Labs",
-      "verified": "https://explore.dakota.cards/address/0xF743c2b2Ff6EE304EE678313FdF4a059fa683636",
+      "verified": "https://explore.cryft.cards/address/0xF743c2b2Ff6EE304EE678313FdF4a059fa683636",
       "license": "MIT",
       "copyright": "Copyright (c) 2026 Cryft Labs"
     },

@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "name": "cryft-contract-examples",
-  "version": "1.0.1",
-  "tag": "v1.0.1",
+  "version": "1.0.2",
+  "tag": "v1.0.2",
   "repository": "https://github.com/CryftCreator/cryft-contract-examples",
   "compiler": {
     "solc": "0.8.37",
@@ -17,8 +17,8 @@
   "shared": [
     {
       "path": "README.md",
-      "sha256": "70b337d101aaf7d466aa07955b829ca519a76b86ab46a3137ea2543de96f9f1b",
-      "bytes": 8369
+      "sha256": "ccc0853faa0aed9e16a718c3a6d39db6829ec2ae82cabd70ceac0be3f379a69d",
+      "bytes": 8799
     },
     {
       "path": "LICENSE",
@@ -37,13 +37,13 @@
     },
     {
       "path": "NOTICE",
-      "sha256": "36a3c9ef540c03c66e7333ff19a8312080928bae6cd634567d87425c61fe53d1",
-      "bytes": 4583
+      "sha256": "cade5ce313ae0b250d62f60bbf6d8d88006573c9bc9df575f51bd486f32d0663",
+      "bytes": 4579
     },
     {
       "path": "provenance.json",
-      "sha256": "6244a47f1d667ce1566c296207e2a0f559f9766ce3f2495f4ae8bdc5f87f0cff",
-      "bytes": 6709
+      "sha256": "9b23687d2f135d216322380738256b2e85676f315797230120cf291eee5beb9d",
+      "bytes": 6705
     },
     {
       "path": "compiler.json",
@@ -82,12 +82,12 @@
     },
     {
       "path": "tools/standard_input.py",
-      "sha256": "568a81272941b0bf82a93b18c5f9566b97431513947eb970d11183c9f20f86e5",
-      "bytes": 2408
+      "sha256": "9113b3c7757e3f54a432bbedb88f02cc59de1de3d0d67db57c62ab0036989bc9",
+      "bytes": 2407
     },
     {
       "path": "tools/make_index.py",
-      "sha256": "6af92af0e50f2f7d248a91daf05bd47fc6223ccf07c663dc756dcfaf0d588ce4",
+      "sha256": "d1981031781ceed7bdf4b62049377a86357e5a4c92dfda17e4efe44670c61b13",
       "bytes": 4283
     },
     {
@@ -102,8 +102,8 @@
     },
     {
       "path": "tests/test_provenance.py",
-      "sha256": "bae1bd6b7c62044cb18244a02f78ce3645324fc2c2a83f8f373db146c51b9c88",
-      "bytes": 5427
+      "sha256": "5484e19517126f85fe55f0bb9de2fc73b00b61682b769718fe44ec3c021e37eb",
+      "bytes": 5723
     }
   ],
   "examples": [
@@ -114,13 +114,13 @@
       "files": [
         {
           "path": "contracts/01-upgradeable/ExampleProxy.sol",
-          "sha256": "82e5844a4193d1f1d2ef59a7cd8f534bc0f6afa4d650edf8cbfd83ef0e2c80f0",
-          "bytes": 4457
+          "sha256": "901b3e01e63b3a0d5601a592f1eca6c5c273efa6eb38963ccb912c5fa5fd289b",
+          "bytes": 4456
         },
         {
           "path": "contracts/01-upgradeable/ExampleTimelock.sol",
-          "sha256": "e9165056603007e347e1b6c9bc98e9e0675b0810abe1ea4692a268b71cd8bdeb",
-          "bytes": 5000
+          "sha256": "7d1d279687368c81a045911688a49654bf492766d88785ffee36cd01989d5a20",
+          "bytes": 4999
         },
         {
           "path": "contracts/01-upgradeable/Initializable.sol",
@@ -166,8 +166,8 @@
         },
         {
           "path": "contracts/02-card-reads/ICryftCardsRead.sol",
-          "sha256": "693137a3e7773c1083814ee4c80926b824c7ce21ae53c50485c1a496e704820b",
-          "bytes": 2200
+          "sha256": "ebf6f3624a6fce7965bdd5595ce3cc6327f6bd6d6c371537565d9f5cbebf08a9",
+          "bytes": 2199
         },
         {
           "path": "contracts/02-card-reads/README.md",
@@ -240,8 +240,8 @@
       "files": [
         {
           "path": "contracts/04-collectible-1155/CollectibleItems.sol",
-          "sha256": "9284d3ab3b51dfb5343bdc992b613ae86ec038f2e7448060e3d64588303ab979",
-          "bytes": 10513
+          "sha256": "09f5c91b12a18736190ce537a25eb8761616347f9e32fbdd47a8fd509b64fa80",
+          "bytes": 10512
         },
         {
           "path": "contracts/04-collectible-1155/README.md",
@@ -255,13 +255,13 @@
         },
         {
           "path": "contracts/01-upgradeable/ExampleProxy.sol",
-          "sha256": "82e5844a4193d1f1d2ef59a7cd8f534bc0f6afa4d650edf8cbfd83ef0e2c80f0",
-          "bytes": 4457
+          "sha256": "901b3e01e63b3a0d5601a592f1eca6c5c273efa6eb38963ccb912c5fa5fd289b",
+          "bytes": 4456
         },
         {
           "path": "contracts/01-upgradeable/ExampleTimelock.sol",
-          "sha256": "e9165056603007e347e1b6c9bc98e9e0675b0810abe1ea4692a268b71cd8bdeb",
-          "bytes": 5000
+          "sha256": "7d1d279687368c81a045911688a49654bf492766d88785ffee36cd01989d5a20",
+          "bytes": 4999
         },
         {
           "path": "remix-tests/collectible_test.sol",

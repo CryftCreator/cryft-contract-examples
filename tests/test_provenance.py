@@ -56,7 +56,7 @@ def test_upstreams_are_pinned_and_every_one_is_used():
     assert used - {None} == set(TABLE["upstreams"])
     for key, u in TABLE["upstreams"].items():
         if "verified" in u:                          # a deployed contract's verified source on the public explorer
-            assert re.fullmatch(r"https://explore\.dakota\.cards/address/0x[0-9a-fA-F]{40}", u["verified"]), key
+            assert re.fullmatch(r"https://explore\.cryft\.cards/address/0x[0-9a-fA-F]{40}", u["verified"]), key
             assert u["contract"] and u["publisher"] == "Cryft Labs", key
         else:                                        # a public repository at a pinned commit or tag
             assert re.fullmatch(r"[0-9a-f]{40}|v\d+\.\d+\.\d+|final", u["commit"]), key
@@ -95,5 +95,8 @@ def test_license_files_name_each_licences_files():
     assert "Apache License" in (ROOT / "LICENSE-APACHE").read_text(encoding="utf-8")
     assert "Permission is hereby granted" in (ROOT / "LICENSE-MIT").read_text(encoding="utf-8")
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    for key, u in TABLE["upstreams"].items():                 # public repositories link to the exact file at the exact commit
+        if u.get("repository") == "cryft-labs/dakota-network":
+            assert f"(https://github.com/{u['repository']}/blob/{u['commit']}/{u['path']})" in readme, key
     for rel, f in TABLE["files"].items():
         assert f"| `{rel}` | {f['license']} |" in readme, rel

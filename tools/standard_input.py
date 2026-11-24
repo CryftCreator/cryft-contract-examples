@@ -1,5 +1,5 @@
 """Write the standard-JSON input for one example contract, with exactly the pinned settings, for "Verify & publish" on
-explore.dakota.cards (Solidity, Standard JSON input, compiler v0.8.37).
+explore.cryft.cards (Solidity, Standard JSON input, compiler v0.8.37).
 
     .venv/bin/python tools/standard_input.py contracts/01-upgradeable/NoticeBoardV1.sol
     → build/NoticeBoardV1.standard-input.json

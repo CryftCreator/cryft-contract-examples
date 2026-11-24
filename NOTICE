@@ -10,13 +10,13 @@ for teaching and are not the deployed contracts.
 
 Originals (Cryft Labs)
 ----------------------
-- CardVaultProxy (Cryft Labs), verified source at https://explore.dakota.cards/address/0x12F2DCCfd6EA97F236f22120610a9B8c405ec621
+- CardVaultProxy (Cryft Labs), verified source at https://explore.cryft.cards/address/0x12F2DCCfd6EA97F236f22120610a9B8c405ec621
   Apache-2.0. Copyright (c) 2023-2026 Cryft Labs.  -> contracts/01-upgradeable/ExampleProxy.sol
-- CardVaultTimelockV2 (Cryft Labs), verified source at https://explore.dakota.cards/address/0xd3bD4E82F38888Bd229de5bb392344Deb21e8407
+- CardVaultTimelockV2 (Cryft Labs), verified source at https://explore.cryft.cards/address/0xd3bD4E82F38888Bd229de5bb392344Deb21e8407
   Apache-2.0. Copyright (c) 2023-2026 Cryft Labs.  -> contracts/01-upgradeable/ExampleTimelock.sol
-- CryftCardsV8_2 (Cryft Labs), verified source at https://explore.dakota.cards/address/0xb251095a39Ff74e317657Ce09Ec2fdEd4f479A11
+- CryftCardsV8_2 (Cryft Labs), verified source at https://explore.cryft.cards/address/0xb251095a39Ff74e317657Ce09Ec2fdEd4f479A11
   Apache-2.0. Copyright (c) 2023-2026 Cryft Labs.  -> contracts/02-card-reads/ICryftCardsRead.sol
-- GiftablesV2_3 (Cryft Labs), verified source at https://explore.dakota.cards/address/0xF743c2b2Ff6EE304EE678313FdF4a059fa683636
+- GiftablesV2_3 (Cryft Labs), verified source at https://explore.cryft.cards/address/0xF743c2b2Ff6EE304EE678313FdF4a059fa683636
   MIT. Copyright (c) 2026 Cryft Labs.  -> contracts/04-collectible-1155/CollectibleItems.sol
 - cryft-labs/dakota-network Contracts/Genesis/Upgradeable/Initializable.sol @ 05155f70b4e37e381b116695dbe0109c8c82883c
   MIT. Modifications Copyright (c) 2026 Cryft Labs.  -> contracts/01-upgradeable/Initializable.sol
